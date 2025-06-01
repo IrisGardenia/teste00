@@ -5,7 +5,6 @@ body {
     margin-right: 0px;
     margin-top: -22px;
     background-color: #eff6ef;
-
 }
 
 .botao-container {
@@ -20,22 +19,21 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
 }
 
 .botao {
+    justify-content: center;
+    align-items: center;
     padding: 10px 20px;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     user-select: none;
-
 }
 
 main {
-
     margin-top: -20px;
-    margin-left: 25px;
-    margin-right: 25px;
     background-color: #eff6ef;
 }
 
@@ -58,21 +56,17 @@ main h3 {
 header h1 {
     font-size: 36px;
     padding-top: 100px;
-
 }
 
 header h2 {
     font-size: 16px;
     font-weight: normal;
-
 }
 
 header {
-    /*  background-color: #eff6ef;*/
     background-color: #eff6ef;
     color: white;
 }
-
 
 @media screen and (max-width: 480px) {
 
@@ -81,13 +75,12 @@ header {
     }
 
     .whatsapp-icone {
-       
+
         margin-right: -25px;
     }
-
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 578px) {
     .text {
         width: 100%;
         margin: 0 auto;
@@ -122,8 +115,6 @@ header {
     }
 }
 
-
-
 .btn-link {
     text-decoration: none;
 }
@@ -135,7 +126,7 @@ header button {
     color: white;
     border-radius: 10px;
     border: none;
-    margin-left: 3%;
+    margin-left: 1%;
     transition: background-color 0.3s, transform 0.2s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-decoration: none;
@@ -182,6 +173,7 @@ header .imagem img:hover {
 
 .container {
     display: flex;
+
     align-items: center;
     justify-content: space-between;
 }
@@ -228,12 +220,19 @@ header .imagem img:hover {
     .imagem img {
         max-width: 85%;
         margin-top: -90px;
+        margin-bottom: 30px;
+
     }
 }
 
+.whatsapp-icone img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
-
-
+.whatsapp-icone img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 header .whatsapp-icone img {
     box-shadow: none !important;
@@ -291,16 +290,12 @@ header .whatsapp-icone img {
 }
 
 .whatsapp-icone img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 /* Mostrar ícone e esconder botão grande em telas menores */
-@media screen and (max-width: 576px) {
-
-    header .text h1 {
-        left: 20px;
-    }
+@media screen and (max-width: 580px) {
 
     .whatsapp-botao {
         display: none;
@@ -310,15 +305,12 @@ header .whatsapp-icone img {
         display: block;
     }
 
-    .text {
-        margin-left: 40px;
-    }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 574px) {
     .text {
-        left: 100px !important;
-        margin-left: 100px !important;
+        left: 80px !important;
+        margin-left: 80px !important;
     }
 }
 
@@ -365,3 +357,54 @@ header .whatsapp-icone img {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+.footer {
+    background-color: #eff6ef;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer .container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.footer h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn-footer {
+    display: inline-block;
+    background-color: #7eb685;
+    color: white;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.btn-footer:hover {
+    background-color: #6aa872;
+    transform: scale(1.05);
+}
+
+.direitos {
+    font-size: 14px;
+    color: #777;
+}
+
+header .container {
+    max-width: 730px;
+}
+
+@media (min-width : 900px) and (max-width : 1100px) {
+    .whatsapp-botao {
+        margin-right: 12%;
+    }
+}
+
+
